@@ -57,19 +57,66 @@ export class BankSlipService {
       const expirationDateMonth = barCode.slice(23, 25);
       const expirationDateDay = barCode.slice(25, 27);
       billExpirationDate = `${expirationDateYear}-${expirationDateMonth}-${expirationDateDay}`;
+      const referenceMonthDate = new Date().getMonth() + 1;
+      const referenceYearDate = new Date().getFullYear();
 
-      const returnedObject: BankSlip = {
-        status: statusCode,
-        success: true,
-        data: {
-          amount: billAmount,
-          type: billType,
-          expirationDate: billExpirationDate,
-          barcode: barCode,
-        },
-      };
-
-      return returnedObject;
+      if (
+        referenceYearDate === Number(expirationDateYear) &&
+        referenceMonthDate === referenceMonthDate
+      ) {
+        const returnedObject: BankSlip = {
+          status: statusCode,
+          success: true,
+          data: {
+            amount: billAmount,
+            type: billType,
+            expirationDate: billExpirationDate,
+            barcode: barCode,
+          },
+        };
+        return returnedObject;
+      } else if (
+        referenceYearDate === Number(expirationDateYear) &&
+        referenceMonthDate === referenceMonthDate + 1
+      ) {
+        const returnedObject: BankSlip = {
+          status: statusCode,
+          success: true,
+          data: {
+            amount: billAmount,
+            type: billType,
+            expirationDate: billExpirationDate,
+            barcode: barCode,
+          },
+        };
+        return returnedObject;
+      } else if (
+        referenceYearDate === Number(expirationDateYear) &&
+        referenceMonthDate === referenceMonthDate + 2
+      ) {
+        const returnedObject: BankSlip = {
+          status: statusCode,
+          success: true,
+          data: {
+            amount: billAmount,
+            type: billType,
+            expirationDate: billExpirationDate,
+            barcode: barCode,
+          },
+        };
+        return returnedObject;
+      } else {
+        const returnedObject: BankSlip = {
+          status: statusCode,
+          success: true,
+          data: {
+            amount: billAmount,
+            type: billType,
+            barcode: barCode,
+          },
+        };
+        return returnedObject;
+      }
     }
   }
 }
