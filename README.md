@@ -52,13 +52,11 @@ $ npm run start
 $ npm run start:dev
 ```
 
-### Running the app
-
 The url in your browser, insomnia or postman should be http://localhost:8080/boleto/digitableLine
 
 ex: http://localhost:8080/boleto/38390001599522000000432461500111189610000192013
 
-You also testing this api trought a frontend app developed to this purpose, by clicking [here](ewally-challenger.abnersouza.dev.br)
+You also testing this api trought a frontend app developed to this purpose, by clicking [here](http://ewallychallenger.abnersouza.dev.br/)
 
 ## Support
 
