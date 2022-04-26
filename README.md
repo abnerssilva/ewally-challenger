@@ -19,20 +19,30 @@
     <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# Welcome :v:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This is a [NestJS](https://docs.nestjs.com/) project created through CLI command 'nest new'. It was made as part of recruitment to a backend vacancy position in Ewally company.
+<br><br>
 
-## Installation
+### About Nest
+Nest (NestJS) is a framework for building efficient, scalable Node.js server-side applications.
+
+
+### Why do I using NestJS?
+I'm using Nest because its offers flexibility to work with a lot of technologies and plugins that works very well in this project.
+
+### Installation
+
+Clone this repository to a directory in your pc, access this directory and run the follow commands above.
+
+OBS.: It was developed in a windows enviroment, if you are using Linux or mac devices you can have some problems with dependencies. Docker wasn't used here.
 
 ```bash
 $ npm install
 ```
 
-## Running the app
+### Running the app
 
 ```bash
 # development
@@ -40,34 +50,19 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
-## Test
+### Running the app
 
-```bash
-# unit tests
-$ npm run test
+The url in your browser, insomnia or postman should be http://localhost:8080/boleto/digitableLine
 
-# e2e tests
-$ npm run test:e2e
+ex: http://localhost:8080/boleto/38390001599522000000432461500111189610000192013
 
-# test coverage
-$ npm run test:cov
-```
+You also testing this api trought a frontend app developed to this purpose, by clicking [here](ewally-challenger.abnersouza.dev.br)
 
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
 
 Nest is [MIT licensed](LICENSE).
